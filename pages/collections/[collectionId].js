@@ -174,7 +174,7 @@ const Collection = () => {
             </div>
             <div className={style.collectionStat}>
               <div className={style.statValue}>
-                //{collection?.allOwners ? collection.allOwners.length : ''}
+                {collection?.allOwners ? collection.allOwners.length : ''}
               </div>
               <div className={style.statName}>owners</div>
             </div>
