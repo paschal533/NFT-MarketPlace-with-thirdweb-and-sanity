@@ -196,7 +196,7 @@ const Collection = () => {
                   alt="eth"
                   className={style.ethLogo}
                 />
-                {collection?.volumeTraded}.5K
+                {collection?.volumeTraded}.45K
               </div>
               <div className={style.statName}>volume traded</div>
             </div>
