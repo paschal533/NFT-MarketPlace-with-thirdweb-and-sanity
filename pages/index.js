@@ -1,4 +1,3 @@
-import Head from 'next/head'
 import Header from '../components/Header'
 import Hero from '../components/Hero'
 import { useWeb3 } from '@3rdweb/hooks'
@@ -7,10 +6,11 @@ import { client } from '../lib/sanityClient'
 import toast, { Toaster } from 'react-hot-toast'
 
 const style = {
-  wrapper: ``,
-  walletConnectWrapper: `flex flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
+  wrapper: `relative`,
+  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/V3WU5skoHvCfvfMLgL5gm4NPoBjpU4gTmOkz8d561r09FrMC-UN-h5vDNbgVKsoNzQ2NdIQPGxC-8mHmd5tPmqbvUEaTPZdB0HNP=s550')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+  walletConnectWrapper: `flex relative bg-transparent flex-wrap flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
   button: `border border-[#282b2f] bg-[#2081e2] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
-  details: `text-lg text-center text=[#282b2f] font-semibold mt-4`,
+  details: `text-lg text-white text-center m-[5px] text=[#282b2f] font-semibold mt-4`,
 }
 
 export default function Home() {
@@ -53,16 +53,18 @@ export default function Home() {
           <Hero />
         </>
       ) : (
-        <div className={style.walletConnectWrapper}>
-          <button
-            className={style.button}
-            onClick={() => connectWallet('injected')}
-          >
-            Connect Wallet
-          </button>
-          <div className={style.details}>
-            You need Chrome to be
-            <br /> able to run this app.
+        <div className={style.container}>
+          <div className={style.walletConnectWrapper}>
+            <button
+              className={style.button}
+              onClick={() => connectWallet('injected')}
+            >
+              Connect Wallet
+            </button>
+            <div className={style.details}>
+              You need metamask installed in your Chrome to be
+              <br /> able to run this app. And make sure you are connected to a Rinkeby network
+            </div>
           </div>
         </div>
       )}

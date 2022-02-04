@@ -9,7 +9,7 @@ import ItemActivity from '../../components/nft/ItemActivity'
 import Purchase from '../../components/nft/Purchase'
 
 const style = {
-  wrapper: `flex flex-col items-center container-lg text-[#e5e8eb]`,
+  wrapper: `flex overflow-hidden flex-col items-center container-lg text-[#e5e8eb]`,
   container: `container p-6`,
   topContent: `flex`,
   nftImgContainer: `flex-1 mr-4`,
