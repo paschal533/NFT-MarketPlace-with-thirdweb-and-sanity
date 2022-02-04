@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 const style = {
   wrapper: `relative`,
-  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s250')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
+  container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/V3WU5skoHvCfvfMLgL5gm4NPoBjpU4gTmOkz8d561r09FrMC-UN-h5vDNbgVKsoNzQ2NdIQPGxC-8mHmd5tPmqbvUEaTPZdB0HNP=s550')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
   contentWrapper: `flex h-screen m-[20px] relative justify-center flex-wrap items-center`,
   copyContainer: `md:w-1/2 w-[100%]`,
   title: `relative text-white text-[46px] font-semibold`,
@@ -42,13 +42,13 @@ const Hero = () => {
           <div className={style.cardContainer}>
             <img
               className="rounded-t-lg"
-              src="https://lh3.googleusercontent.com/ujepnqpnL0nDQIHsWxlCXzyw4pf01yjz1Jmb4kAQHumJAPrSEj0-e3ABMZlZ1HEpJoqwOcY_kgnuJGzfXbd2Tijri66GXUtfN2MXQA=s550"
+              src="https://lh3.googleusercontent.com/V3WU5skoHvCfvfMLgL5gm4NPoBjpU4gTmOkz8d561r09FrMC-UN-h5vDNbgVKsoNzQ2NdIQPGxC-8mHmd5tPmqbvUEaTPZdB0HNP=s550"
               alt=""
             />
             <div className={style.infoContainer}>
               <img
                 className="h-[2.25rem] image rounded-full"
-                src="https://lh3.googleusercontent.com/qQj55gGIWmT1EnMmGQBNUpIaj0qTyg4YZSQ2ymJVvwr_mXXjuFiHJG9d3MRgj5DVgyLa69u8Tq9ijSm_stsph8YmIJlJQ1e7n6xj=s64"
+                src="https://lh3.googleusercontent.com/V3WU5skoHvCfvfMLgL5gm4NPoBjpU4gTmOkz8d561r09FrMC-UN-h5vDNbgVKsoNzQ2NdIQPGxC-8mHmd5tPmqbvUEaTPZdB0HNP=s550"
                 alt=""
               />
               <div className={style.author}>
