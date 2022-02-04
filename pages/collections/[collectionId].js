@@ -46,7 +46,7 @@ const Collection = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://eth-rinkeby.alchemyapi.io/v2/wvVFJvkFeaaKL09vly_idjOOKtwiUOnx'
+      //'https://eth-rinkeby.alchemyapi.io/v2/wvVFJvkFeaaKL09vly_idjOOKtwiUOnx'
     )
     return sdk.getNFTModule(collectionId)
   }, [provider])
@@ -66,7 +66,7 @@ const Collection = () => {
 
     const sdk = new ThirdwebSDK(
       provider.getSigner(),
-      'https://eth-rinkeby.alchemyapi.io/v2/wvVFJvkFeaaKL09vly_idjOOKtwiUOnx'
+      //'https://eth-rinkeby.alchemyapi.io/v2/wvVFJvkFeaaKL09vly_idjOOKtwiUOnx'
     )
     return sdk.getMarketplaceModule(
       '0xF76A40B3AEa617273B8F39eD3c070d23067C6F80'
@@ -196,7 +196,7 @@ const Collection = () => {
                   alt="eth"
                   className={style.ethLogo}
                 />
-                {collection?.volumeTraded}.45K
+                {collection?.volumeTraded}.5K
               </div>
               <div className={style.statName}>volume traded</div>
             </div>
