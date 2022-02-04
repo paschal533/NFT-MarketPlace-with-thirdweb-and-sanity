@@ -8,7 +8,7 @@ import toast, { Toaster } from 'react-hot-toast'
 const style = {
   wrapper: `relative`,
   container: `before:content-[''] before:bg-red-500 before:absolute before:top-0 before:left-0 before:right-0 before:bottom-0 before:bg-[url('https://lh3.googleusercontent.com/V3WU5skoHvCfvfMLgL5gm4NPoBjpU4gTmOkz8d561r09FrMC-UN-h5vDNbgVKsoNzQ2NdIQPGxC-8mHmd5tPmqbvUEaTPZdB0HNP=s550')] before:bg-cover before:bg-center before:opacity-30 before:blur`,
-  walletConnectWrapper: `flex relative bg-transparent flex-wrap flex-col justify-center items-center h-screen w-screen bg-[#3b3d42] `,
+  walletConnectWrapper: `flex relative bg-transparent flex-wrap flex-col justify-center items-center h-screen w-screen `,
   button: `border border-[#282b2f] bg-[#2081e2] p-[0.8rem] text-xl font-semibold rounded-lg cursor-pointer text-black`,
   details: `text-lg text-white text-center m-[5px] text=[#282b2f] font-semibold mt-4`,
 }
